@@ -1,2 +1,19 @@
 Uso de IA - Matías Calderón:
+
+ANALISIS:
+1. Componente: No se utilizo IA.
+2. JSX: No se utilizo IA.
+3. Props (Prompt): Estoy haciendo un analisis a la problematica de una aplicación web SPA de React de una biblioteca comunitaria. En este caso planteado, donde usaria Props en el problema y por que seria el adecuado?
+Ayuda: Me ayudo a sacar una conclusión del flujo de información dentro de la problematica planteada. Fue un poco util. 
+Modificación: Nada.
+4. Estado (Prompt): Y con estado? No seria algo similar a cómo se mantiene la información dentro del problema?
+Ayuda: Solo lo utilice para verificar mi duda. Fue demasiado util al darme la idea general.
+Modificación: Nada.
+5. Renderizado de lista (Prompt / .map + key): Renderizado de lista (.map + key)? Para que serviria?
+Ayuda: Llegue a la conclusión de que ayuda a mantener la visualización de los datos disponibles dentro de la aplicación Web para los clientes.
+Modificación: Nada
+6. Renderizado condicional (Prompt): Y renderizado condicional?
+Ayuda: Me ayudo a entender que se utilizan para mantener elementos visuales dentro del proyecto.
+Modificación: Nada 
+
 Etapa 1:
