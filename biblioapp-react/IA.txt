@@ -30,4 +30,13 @@ Utilidad: Se utilizo para crear los props dentro del proyecto, se mejoraria el u
 Modificación: Se modifico el proyecto base con validación y proptypes para diferenciar libros disponibles. 
 
 Etapa 3: 
-// 
+// ListaLibros.jsx:
+Prompt: Ahora cree este, y necesito que reciba el array de libros por los props. Necesito que recorra el array con .map() y que renderize un LibroCard de LibroCard.jsx por cada libro. Asegurate que la prop key se asigne correctamente y no use el indice del array utilizando el id de cada elemento, y después para terminar en App.jsx renderiza ListaLibros pasandole los datos importados.
+Utilidad: 
+Modificación: 
+
+Etapa 4:
+// FiltroEstado.jsx:
+Prompt:
+Utilidad: 
+Modificación:

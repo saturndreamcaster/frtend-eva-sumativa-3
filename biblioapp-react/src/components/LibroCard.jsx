@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 export default function LibroCard({ titulo, editorial, anio, estado, resumen, autores }) {
 	const estados = {
@@ -43,21 +42,4 @@ export default function LibroCard({ titulo, editorial, anio, estado, resumen, au
 			{resumen && <p style={{ margin: 0, color: '#334155' }}>{resumen}</p>}
 		</article>
 	)
-}
-
-LibroCard.propTypes = {
-	titulo: PropTypes.string.isRequired,
-	editorial: PropTypes.string,
-	anio: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-	estado: PropTypes.oneOf(['Disponible', 'Prestado', 'Reservado']),
-	resumen: PropTypes.string,
-	autores: PropTypes.arrayOf(PropTypes.string),
-}
-
-LibroCard.defaultProps = {
-	editorial: 'Desconocida',
-	anio: '',
-	estado: 'Disponible',
-	resumen: '',
-	autores: [],
 }

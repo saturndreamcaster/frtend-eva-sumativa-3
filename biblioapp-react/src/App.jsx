@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react'
 import './App.css'
 import { libros as librosData } from './data/libros'
+import ListaLibros from './components/ListaLibros'
 
 export default function App() {
 	const [query, setQuery] = useState('')
@@ -52,29 +53,7 @@ export default function App() {
 					<strong>{results.length}</strong> libros mostrados
 				</div>
 
-				<section className="grid" aria-live="polite">
-					{results.map((b) => {
-						const estadoClass = b.estado === 'Disponible' ? 'tag-available' : b.estado === 'Prestado' ? 'tag-borrowed' : 'tag-reserved'
-						return (
-							<article key={b.id} className="card" aria-labelledby={`title-${b.id}`}>
-								<div className="card-head">
-									<h3 id={`title-${b.id}`}>{b.titulo}</h3>
-									<div className="tags">
-										{b.esNovedad && <span className="tag tag-new">Novedad</span>}
-										<span className={`tag ${estadoClass}`}>{b.estado}</span>
-									</div>
-								</div>
-
-								<p className="meta">
-									<strong>Autor(es):</strong> {b.autores.join(', ')} <span className="dot">•</span>
-									<strong>Editorial:</strong> {b.editorial} ({b.anio})
-								</p>
-
-								<p className="summary">{b.resumen}</p>
-							</article>
-						)
-					})}
-				</section>
+				<ListaLibros books={librosData} />
 			</main>
 
 			<footer className="footer">Hecho con ❤️ — Librería Comunitaria</footer>
