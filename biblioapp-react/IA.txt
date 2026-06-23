@@ -22,3 +22,12 @@ Etapa 1:
 Necesito que sea simple, ordenada, eficiente y segura. Que permita ver los libros, distinguir cuales estan disponibles y resaltar las novedades de estos. No se requiere base de datos ni conexión a internet, ya que los datos estan precargados y se encuentran en el archivo "libros.js" dentro de la carpeta data para usarlos como referencia. Solo crea la base del sitio con los datos cargados, no crees componentes nuevos en components hasta que yo lo diga.
 Utilidad: Se utilizo para poder crear el componente principal y la base de la libreria. Se podria mejorar en la forma que la IA no haga un error de interpretación.
 Modificación: No se realizo ninguna modificación.
+
+Etapa 2:
+// LibroCard.jsx:
+Prompt: Acabo de crear este componente dentro del proyecto. El componente utiliza los props de titulo, editorial, año, estado, resumen y autores para mostrar la información de forma ordenada - y necesito que se apliquen colores diferentes para mostrar disponibilidad. (Verde para disponible, azul para prestado, rojo para reservado.). Las validaciones no pueden tener credenciales, claves o datos sensibles - no utilizes dangerouslySetInnerHTML y mantenlo cómo contenido JSX normal, y utiliza proptypes. En resumen: PropTypes y Validación. + Actualiza los CSS.
+Utilidad: Se utilizo para crear los props dentro del proyecto, se mejoraria el uso de colores al crear los estados de los libros. Se actualizo el CSS después.
+Modificación: Se modifico el proyecto base con validación y proptypes para diferenciar libros disponibles. 
+
+Etapa 3: 
+// 

@@ -34,4 +34,17 @@
 	:root{--bg:#071028;--card:#071428;--text:#e6eef8;--muted:#9aa7bd}
 }
 
+/* Styles added for LibroCard component */
+.libro-card{background:var(--card);padding:0.9rem;border-radius:10px;border:1px solid #eef2ff;box-shadow:0 1px 2px rgba(2,6,23,0.04)}
+.libro-card h3{margin:0;font-size:1.05rem}
+.libro-card .libro-estado{display:inline-block;padding:0.22rem 0.5rem;border-radius:999px;color:#fff;font-size:0.75rem}
+.libro-card p{margin:0.45rem 0;color:var(--muted)}
+.libro-card .meta-strong{font-weight:600;color:var(--text)}
+
+/* Fallback colors if inline styles are not provided */
+.libro-estado.disponible{background:var(--ok)}
+.libro-estado.prestado{background:#2563eb}
+.libro-estado.reservado{background:var(--bad)}
+
+
 
