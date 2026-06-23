@@ -22,4 +22,4 @@ Renderizado condicional:
 1. ¿Que ventaja tiene dividir el catalogo en componentes en lugar de escribir todo en un solo archivo?
 - Ayuda a mantener la coherencia y la eficiencia del código dentro del proyecto, ya que escribir todo en un solo archivo solo causaria que el proyecto este lleno de código spaghetti que cause problemas de renderización, problemas con los datos y con la manera en la que funcionaria generalmente al ser ejecutado.
 2. ¿Que diferencia hay entre props y estado en tu solución? Da un ejemplo concreto de cada uno tomado de esta aplicación.
-- 
+- Con lo acordado en la aplicación, se puede decir que props y estados se encuentran totalmente diferentes ya que por ejemplo en los feats algunos entran desde afuera al ser props, mientras que estados ya se encuentran dentros de los componentes (LibroCard/ListaLibros).

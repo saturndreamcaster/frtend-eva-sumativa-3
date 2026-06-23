@@ -15,6 +15,7 @@ export default function ListaLibros({ books }) {
           estado={libro.estado}
           resumen={libro.resumen}
           autores={libro.autores}
+          esNovedad={libro.esNovedad}
         />
       ))}
     </section>

@@ -16,6 +16,11 @@ Modificación: Nada
 Ayuda: Me ayudo a entender que se utilizan para mantener elementos visuales dentro del proyecto.
 Modificación: Nada 
 
+ANALISIS: 
+Pregunta 2: Aquí, que diferencia hay entre props y estado?
+Ayuda: Me ayudo a entender por que se encuentran dentro del proyecto. 
+Modificación: Nada. 
+
 Etapa 1:
  // Base:
  Prompt: Hola. Tengo que realizar la base de una aplicación web SPA de una biblioteca comunitaria con React, va lo siguiente:
@@ -42,8 +47,8 @@ Utilidad: Se utilizo para crear el filtro dentro de la aplicación web, filtrand
 Modificación: Ninguna 
 
 Etapa 5:
-// esNovedad: true:
-Prompt:
-Utilidad:
-Modificación:
+// esNovedad: true: 
+Prompt: Para la etapa final, por favor crea el destacador de novedades con esNovedad: true con una etiqueta que diga "NUEVO" y que muestre un contador con libros que sean novedad.
+Utilidad: Se utilizo para la destacacion de objetos nuevos en la biblioteca.
+Modificación: Ninguna
 

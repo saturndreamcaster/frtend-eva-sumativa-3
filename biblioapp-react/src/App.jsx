@@ -10,6 +10,11 @@ export default function App() {
 	const [query, setQuery] = useState('')
 	const [filter, setFilter] = useState('Todos')
 
+	const novedadesCount = useMemo(
+		() => librosData.filter((b) => b.esNovedad).length,
+		[]
+	)
+
 	const results = useMemo(() => {
 		const q = query.trim().toLowerCase()
 		return librosData.filter((b) => {
@@ -51,6 +56,7 @@ export default function App() {
 			<main className="container">
 				<div className="summary">
 					<strong>{results.length}</strong> libros mostrados
+					<span className="novedades-count">{novedadesCount} NUEVO{novedadesCount === 1 ? '' : 'S'}</span>
 				</div>
 
 				{results.length > 0 ? (

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function LibroCard({ titulo, editorial, anio, estado, resumen, autores }) {
+export default function LibroCard({ titulo, editorial, anio, estado, resumen, autores, esNovedad }) {
 	const estados = {
 		Disponible: { label: 'Disponible', color: '#16a34a' },
 		Prestado: { label: 'Prestado', color: '#2563eb' },
@@ -16,7 +16,10 @@ export default function LibroCard({ titulo, editorial, anio, estado, resumen, au
 	return (
 		<article className="libro-card" aria-labelledby={`libro-${titulo}`}>
 			<header style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
-				<h3 id={`libro-${titulo}`} style={{ margin: 0 }}>{titulo}</h3>
+				<div>
+					<h3 id={`libro-${titulo}`} style={{ margin: 0 }}>{titulo}</h3>
+					{esNovedad && <span className="libro-nuevo">NUEVO</span>}
+				</div>
 				<span
 					className="libro-estado"
 					aria-label={`Estado: ${displayEstado}`}
