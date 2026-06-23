@@ -2,6 +2,9 @@ import React, { useMemo, useState } from 'react'
 import './App.css'
 import { libros as librosData } from './data/libros'
 import ListaLibros from './components/ListaLibros'
+import FiltroEstado from './components/FiltroEstado'
+
+const MAX_QUERY_LENGTH = 40
 
 export default function App() {
 	const [query, setQuery] = useState('')
@@ -32,19 +35,16 @@ export default function App() {
 						<input
 							id="search"
 							value={query}
-							onChange={(e) => setQuery(e.target.value)}
+							onChange={(e) => {
+								const nextValue = e.target.value.slice(0, MAX_QUERY_LENGTH)
+								setQuery(nextValue.trimStart())
+							}}
 							placeholder="Buscar por título, autor o año..."
 							aria-label="Buscar libros"
 						/>
-
-						<label className="sr-only" htmlFor="filter">Filtrar por estado</label>
-						<select id="filter" value={filter} onChange={(e) => setFilter(e.target.value)}>
-							<option>Todos</option>
-							<option>Disponible</option>
-							<option>Prestado</option>
-							<option>Reservado</option>
-						</select>
 					</div>
+
+					<FiltroEstado selected={filter} onChange={setFilter} />
 				</div>
 			</header>
 
@@ -53,7 +53,11 @@ export default function App() {
 					<strong>{results.length}</strong> libros mostrados
 				</div>
 
-				<ListaLibros books={librosData} />
+				{results.length > 0 ? (
+					<ListaLibros books={results} />
+				) : (
+					<p className="empty-message">No hay libros que coincidan en su búsqueda</p>
+				)}
 			</main>
 
 			<footer className="footer">Hecho con ❤️ — Librería Comunitaria</footer>

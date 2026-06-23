@@ -32,11 +32,18 @@ Modificación: Se modifico el proyecto base con validación y proptypes para dif
 Etapa 3: 
 // ListaLibros.jsx:
 Prompt: Ahora cree este, y necesito que reciba el array de libros por los props. Necesito que recorra el array con .map() y que renderize un LibroCard de LibroCard.jsx por cada libro. Asegurate que la prop key se asigne correctamente y no use el indice del array utilizando el id de cada elemento, y después para terminar en App.jsx renderiza ListaLibros pasandole los datos importados.
-Utilidad: 
-Modificación: 
+Utilidad: Se utilizo para crear el array de libros por props. Se podría mejorar ya que la IA no entiende que hay componentes que no se encuentran instalados para el proyecto, y que se mantiene simple.
+Modificación: Se modifico el aditivo de cosas innecesarias dentro del proyecto y se añadio la visualización y filtro con .map().
 
 Etapa 4:
 // FiltroEstado.jsx:
+Prompt: Ahora crea este con botones para filtrar por los siguientes estados: "Todos", "Disponible", "Prestado" o "Reservado". En App.jsx, utiliza el useState para guardar los filtros seleccionados y los campos de busqueda por titulo - aplicando cada filtro sobre el array antes de que lo pases a ListaLibros. Haz que el campo de busqueda sea un componente controlado y que las validaciones recorten espacios y limiten el largo al usarlo, y termina con el renderizado condicional para mostrar el mensaje de "No hay libros que coincidan en su busqueda" cuando el resultado quede vacio.
+Utilidad: Se utilizo para crear el filtro dentro de la aplicación web, filtrando por titulo y se guardan con useState. 
+Modificación: Ninguna 
+
+Etapa 5:
+// esNovedad: true:
 Prompt:
-Utilidad: 
+Utilidad:
 Modificación:
+
